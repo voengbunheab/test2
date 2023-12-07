@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  header {
+    height: 650px;
+    background-image: url(Picture/R.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .navbar a {
+    color: rgb(255, 255, 255);
+  }
+  .navbar .logo {
+    color: rgb(250, 250, 250);
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .nav-list {
+    display: flex;
+    gap: 2rem; /*​គម្លាតអក្សរ*/
+    padding: 12px;
+  }
+  .nav-link > a:hover {
+    color: rgb(31, 14, 186);
+  }
+  /* ICON BAR */
+  .icon-bar {
+    color: white;
+    display: none;
+    margin-top: 5px;
+    font-size: 30px;
+  }
+  @media screen and (max-width: 850px) {
+    .icon-bar {
+      display: block;
+    }
+    .nav-list {
+      display: none;
+    }
+  }
+  /* End Navbar */
+  
+  /* Profile */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .images1 {
+    display: block;
+    width: 200px;
+    clip-path: circle();
+    margin-top: 50px;
+  }
+  
+  /* Text */
+  .text-name {
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .text-name2 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  /* End Text */
+  
+  /* Button */
+  .container-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .green-button {
+    background-color: green;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  /* End Profile */
+  
+  /* ICON  Facebook Twitter Google Instagram*/
+  .container-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 44px;
+  }
+  
+  .icon-facebook {
+    display: inline-block;
+    font-size: 40px;
+    color: #3b5998;
+    margin: 10px;
+  }
+  .icon-twitter {
+    display: inline-block;
+    font-size: 40px;
+    color: #1da1f2;
+    margin: 10px;
+  }
+  .icon-google {
+    display: inline-block;
+    font-size: 40px;
+    color: #db4437;
+    margin: 10px;
+  }
+  .icon-instragram {
+    display: inline-block;
+    font-size: 40px;
+    color: #e4405f;
+    margin: 10px;
+  }
+  /* End Icon */
+  
+  /* Basic Information */
+  #work-exp0 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .container--box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .box-1 {
+    width: 550px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 1px 7px 0 rgb(173, 173, 189);
+  }
+  .box-1 p {
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    margin: 30px;
+  }
+  .box-1 h2 {
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  .box-2 {
+    width: 550px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 1px 7px 0 rgb(173, 173, 189);
+  }
+  .box-2 h3 {
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .box-2 p {
+    margin-left: 30px;
+    margin-top: 15px;
+    text-align: justify;
+    padding-right: 20px;
+  }
+  
+  /* Basic Information */
+  
+  /* Personal Skills */
+  .top-skill {
+    display: flex;
+    margin: auto;
+  }
+  .personalskill-h1 {
+    text-align: center;
+  }
+  .table {
+    border: 100px solid black;
+  }
+  .skills {
+    margin: auto;
+    width: 900px;
+    padding: 20px 0;
+  }
+  .skills h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 40px;
+  }
+  .content {
+    display: left;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .left {
+    width: 50%;
+  }
+  .left h1 {
+    text-align: left;
+    font-size: 30px;
+  }
+  .right {
+    flex: 1;
+    margin-left: 30px;
+  }
+  .right .line {
+    margin-bottom: 15px;
+  }
+  .right .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .right .info span {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .right .bars {
+    background-color: lightgrey;
+    height: 5px;
+    width: 100%;
+    position: relative;
+  }
+  .right .bars::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: rgb(75, 209, 68);
+  }
+  .right .html::before {
+    width: 90%;
+  }
+  .right .cs::before {
+    width: 85%;
+  }
+  .right .js::before {
+    width: 80%;
+  }
+  .right .ss::before {
+    width: 55%;
+  }
+  .right .bs::before {
+    width: 85%;
+  }
+  .right .ps::before {
+    width: 60%;
+  }
+  /* End Personal Skill */
+  
+  /* ICON Laptop Gallary Camera */
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon-container i {
+    font-size: 48px;
+    margin: 10px;
+    transition: 600ms;
+    cursor: pointer;
+  }
+  .icon-container i:hover {
+    transform: scale(1.03);
+  }
+  /* End ICON Laptop Gallary Camera */
+  
+  /* Portfolio */
+  .Portfolioh2 {
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .image-grid {
+    display: flex;
+    grid-gap: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .image-item {
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+  }
+  
+  .image-item img {
+    display: block;
+    width: 500px;
+    height: 400px;
+    transition: transform 0.5s;
+  }
+  
+  .image-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .image-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay-text {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+  }
+  /* End Portfolio */
+  
+  /* Work Experience */
+  #work-exp {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .container-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .box1 {
+    width: 200px;
+    height: 180px;
+    background-color: green;
+    text-align: center;
+  }
+  .box1 p {
+    color: white;
+    margin-top: 50px;
+  }
+  .box1 h2 {
+    color: white;
+    margin-top: 20px;
+  }
+  .box2 {
+    width: 550px;
+    height: 180px;
+    background-color: rgb(244, 242, 242);
+    box-shadow: 4px 7px 7px 0;
+  }
+  .box2 h3 {
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .box2 p {
+    margin-left: 30px;
+    margin-top: 15px;
+    text-align: justify;
+    padding-right: 20px;
+  }
+  
+  @media (max-width: 400px) {
+    .container-box {
+      flex-direction: column;
+    }
+  }
+  .eduaction {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  /* End Work Experience */
+  
+  /* Referrance */
+  .Referance-h2 {
+    color: black;
+    font-size: 40px;
+    margin-top: 80px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .section {
+    background-color: white;
+    justify-content: space-between;
+    display: flex;
+    padding: 40px;
+    width: 60%;
+    margin: 10rem auto 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 7px 7px 0;
+  }
+  .section img {
+    display: block;
+    width: 150px;
+    border-radius: 30px;
+    object-fit: cover;
+    margin-left: 25px;
+  }
+  .section h3 {
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .section h2 {
+    color: black;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  .section p {
+    color: black;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: justify;
+  }
+  @media (max-width: 600px) {
+    .section {
+      flex-direction: column;
+    }
+    .section img {
+      flex-direction: column;
+      margin-left: 65px;
+    }
+    .section h2 {
+      margin-left: 60px;
+    }
+    .section h3 {
+      margin-left: 49px;
+    }
+  }
+  
+  /* End Referance */
+  
+  /* Contact Us */
+  
+  .imgs {
+    margin: 0 auto;
+    max-width: 1024px;
+    margin-top: 50px;
+    border: 1px solid white;
+    background-image: url(images/staticmap.png);
+    flex-wrap: wrap;
+  }
+  .container-map {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    flex-wrap: wrap;
+  }
+  .container-map h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  .contact-form {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f8f9fa;
+  }
+  input:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+  }
+  button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  .contact-info {
+    text-align: left;
+    margin-left: 40px;
+  }
+  .contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .contact-info p {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  .contact-info i {
+    color: #4caf50;
+    margin-right: 10px;
+  }
+  .text-contactus {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  /* End ContactUs */
+  
+  /* Footer */
+  footer {
+    background-color: #efefef;
+    padding: 5px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #333;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons a:hover {
+    color: #55acee;
+  }
+  .footer-name {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+  }
+  /* End Footer */
+  
